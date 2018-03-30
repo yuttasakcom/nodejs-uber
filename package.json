@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-uber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yuttasakcom/nodejs-uber.git",
+  "author": "Yuttasak Pannawat <yuttasakcom@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "NODE_ENV=test mocha --recursive --exit",
+    "test-watch": "NODE_ENV=test nodemon --exec 'mocha --recursive -R min'"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mocha": "^5.0.5",
+    "mongoose": "^5.0.12",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
